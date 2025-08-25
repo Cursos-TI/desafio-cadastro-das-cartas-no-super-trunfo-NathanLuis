@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Escolhi o nivel Nível Aventureiro : Cálculo de Atributos
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
@@ -139,3 +140,5 @@ int main() {
     system("pause");
     return 0;
 }
+
+// Nível Aventureiro codigo completo.
