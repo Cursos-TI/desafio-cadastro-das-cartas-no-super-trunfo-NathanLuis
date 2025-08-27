@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Escolhi o nivel Nível Aventureiro : Cálculo de Atributos
+// Nivel Mestre concluido
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
@@ -33,6 +33,8 @@ int main() {
     float densidade_populacional2; // densidade populacional (população/área)
     float pib_per_capita2; // PIB per capita (PIB/população)
 
+    float super_poder1;
+    float super_poder2;
 // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
@@ -95,7 +97,9 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-
+    printf("-------------------------------\n");
+    printf("Dados das cidades cadastradas:\n");
+    printf("-------------------------------\n");
     // Exibição dos dados do jogador 1
     printf("Dados da cidade do Jogador 1:\n");
     printf("Estado: %s\n", estado1);
@@ -118,6 +122,8 @@ int main() {
     
     // Exibição dos dados do jogador 2
 
+    printf("----------------------------------\n");
+
     printf("Dados da cidade do Jogador 2:\n");
     printf("Estado: %s\n", estado2);
 
@@ -135,10 +141,80 @@ int main() {
 
     printf("PIB per capita (bilhoes/hab): %.6f\n", pib_per_capita2);
 
+    super_poder1 = (1/densidade_populacional1) + pib_per_capita1 + pontos_turisticos1;
+    super_poder2 = (1/densidade_populacional2) + pib_per_capita2 + pontos_turisticos2;
+
+    printf("\n");
+
+    printf("-------------------------------\n");
+    printf("Comparacao entre as cidades:\n");
+    printf("-------------------------------\n");
+
+    printf("\n");
+
+    // Comparação dos Atributos:
+
+    if (populacao1 > populacao2) {
+        printf("Jogador 1 tem a cidade com maior populacao.\n");
+    } else if (populacao1 < populacao2) {
+        printf("Jogador 2 tem a cidade com maior populacao.\n");
+    } else {
+        printf("As cidades tem a mesma populacao.\n");
+    }
+
+    if (area1 > area2) {
+        printf("Jogador 1 tem a cidade com maior area.\n");
+    } else if (area1 < area2) {
+        printf("Jogador 2 tem a cidade com maior area.\n");
+    } else {
+        printf("As cidades tem a mesma area.\n");
+    }
+
+    if (pib1 > pib2) {
+        printf("Jogador 1 tem a cidade com maior PIB.\n");
+    } else if (pib1 < pib2) {
+        printf("Jogador 2 tem a cidade com maior PIB.\n");
+    } else {
+        printf("As cidades tem o mesmo PIB.\n");
+    }
+
+    if (pontos_turisticos1 > pontos_turisticos2) {
+        printf("Jogador 1 tem a cidade com maior numero de pontos turisticos.\n");
+    } else if (pontos_turisticos1 < pontos_turisticos2) {
+        printf("Jogador 2 tem a cidade com maior numero de pontos turisticos.\n");
+    } else {
+        printf("As cidades tem o mesmo numero de pontos turisticos.\n");
+    }
+
+    
+    if (densidade_populacional1 > densidade_populacional2) {
+        printf("Jogador 1 tem a cidade com maior densidade populacional.\n");
+    } else if (densidade_populacional1 < densidade_populacional2) {
+        printf("Jogador 2 tem a cidade com maior densidade populacional.\n");
+    } else {
+        printf("As cidades tem a mesma densidade populacional.\n");
+    }
+
+    if (pib_per_capita1 > pib_per_capita2) {
+        printf("Jogador 1 tem a cidade com maior PIB per capita.\n");
+    } else if (pib_per_capita1 < pib_per_capita2) {
+        printf("Jogador 2 tem a cidade com maior PIB per capita.\n");
+    } else {
+        printf("As cidades tem o mesmo PIB per capita.\n");
+    }
+
+    if (super_poder1 > super_poder2) {
+        printf("Jogador 1 tem a cidade com maior super poder.\n");
+    } else if (super_poder1 < super_poder2) {
+        printf("Jogador 2 tem a cidade com maior super poder.\n");
+    } else {
+        printf("As cidades tem o mesmo super poder.\n");
+    }
+    
     printf("\n");
 
     system("pause");
     return 0;
 }
 
-// Nível Aventureiro codigo completo.
+// Nível Mestre, codigo completo.
