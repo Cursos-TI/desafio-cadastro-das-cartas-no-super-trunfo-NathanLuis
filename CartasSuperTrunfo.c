@@ -188,9 +188,9 @@ int main() {
 
     
     if (densidade_populacional1 > densidade_populacional2) {
-        printf("Jogador 1 tem a cidade com maior densidade populacional.\n");
-    } else if (densidade_populacional1 < densidade_populacional2) {
         printf("Jogador 2 tem a cidade com maior densidade populacional.\n");
+    } else if (densidade_populacional1 < densidade_populacional2) {
+        printf("Jogador 1 tem a cidade com maior densidade populacional.\n");
     } else {
         printf("As cidades tem a mesma densidade populacional.\n");
     }
